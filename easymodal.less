@@ -1,0 +1,39 @@
+body.easymodal_blockscroll {
+	overflow: hidden;
+}
+
+.easymodal {
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+	z-index: 3001;
+	background-color: white;
+	font-family: sans-serif;
+	header, footer {
+		padding: 10px;
+		background-color: lightgrey;
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0px;
+		}
+	}
+	section {
+		padding: 10px;
+	}
+}
+
+.easymodal.show {
+	display: block;
+}
+
+.easymodal_screendark {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 3000;
+}
