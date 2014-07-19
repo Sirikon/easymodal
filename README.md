@@ -1,0 +1,4 @@
+easymodal
+=========
+
+Easy Modals
