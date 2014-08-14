@@ -21,7 +21,6 @@ var easymodalStatics = {
 }
 
 document.addEventListener('click', function(e){
-
 	// Find the first A
 	var elementLink = e.target;
 	for(var i = 0; i < e.path.length; i++){
@@ -48,5 +47,7 @@ document.addEventListener('click', function(e){
 		if(e.target.className == 'easymodal_screendark'){
 			easymodalStatics.hideModal();
 		}
+	}else if(e.target.className.indexOf('easymodal-close') >= 0){
+		easymodalStatics.hideModal();
 	}
 });
