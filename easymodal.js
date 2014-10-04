@@ -23,9 +23,11 @@ var easymodalStatics = {
 document.addEventListener('click', function(e){
 	// Find the first A
 	var elementLink = e.target;
-	for(var i = 0; i < e.path.length; i++){
-		if(e.path[i].nodeName == 'A'){
-			elementLink = e.path[i];
+	if(e.path){
+		for(var i = 0; i < e.path.length; i++){
+			if(e.path[i].nodeName == 'A'){
+				elementLink = e.path[i];
+			}
 		}
 	}
 
